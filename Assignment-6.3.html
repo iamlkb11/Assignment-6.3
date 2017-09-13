@@ -1,0 +1,49 @@
+<html><!-- Head of the Root -->
+  <head><!-- child sub root of the html tag as head tag  -->
+    <!-- it is a title tag -->
+    <title>Result</title>
+  </head>
+  <!-- it is a body tag -->
+  <body>
+    <!-- it is a script tag -->
+    <script language="JavaScript">
+          function Avg()
+          {
+          var hin =document.input.hin.value;
+          var eng =document.input.eng.value;
+          var mat =document.input.mat.value;
+          var total = hin-(-eng)-(-mat);
+          var avg = total/3;
+          
+          document.write("<P>Result is " + (total/3) + "</p>");
+          //find the grade and result using the ternary operator inside the switch statement    
+            if (avg<35)
+            {
+            Sdocument.write("<br>Result: Fail<br>Grade: D");
+            } else if(avg<50){
+            document.write("<br>Result: Pass<br>Grade: C");
+            }else if(avg<65){
+            document.write("<br>Result: Pass<br>Grade: B"); 
+            }else{
+            document.write("<br>Result: Pass<br>Grade: A");
+            }
+          }
+      </script>
+      
+      <form name=input><!-- it is a form type tag -->
+          Marks in Hindi:
+         <input type="text" name="hin" size=10>
+         <br>
+         <br>
+         Marks in English:
+         <input type="text" name="eng" size=10>
+         <br>
+         <br>
+         Marks in Maths:
+         <input type="text" name="mat" size=10>
+         <br>
+         <br><!-- it is a line break tag -->
+         <input type="button" value="Get Result" onClick='Avg();'>  
+      </form>
+  </body>
+</html>
